@@ -1,7 +1,6 @@
 {
   "expo": {
     "name": "BMI 計算機",
-    "displayName": "BMI 計算機",
     "slug": "bmi-calc",
     "privacy": "public",
     "sdkVersion": "35.0.0",
