@@ -14,16 +14,17 @@ export default function App() {
   const [result, setResult] = useState("");
 
   const calculate = () => {
-    let bmi = weight / (height / 100) ** 2;
-    if (bmi < 18.5) {
+    let bmi_calc = weight / (height / 100) ** 2;
+    setBmi(bmi_calc);
+    if (bmi_calc < 18.5) {
       setResult("低体重(痩せ型)");
-    } else if (bmi >= 18.5 && bmi < 25) {
+    } else if (bmi_calc >= 18.5 && bmi < 25) {
       setResult("普通体重");
-    } else if (bmi >= 25 && bmi < 30) {
+    } else if (bmi_calc >= 25 && bmi < 30) {
       setResult("肥満（１度）");
-    } else if (bmi >= 30 && bmi < 35) {
+    } else if (bmi_calc >= 30 && bmi < 35) {
       setResult("肥満（２度）");
-    } else if (bmi >= 35 && bmi < 40) {
+    } else if (bmi_calc >= 35 && bmi < 40) {
       setResult("肥満（３度）");
     } else {
       setResult("肥満（4度）");
